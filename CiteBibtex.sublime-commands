@@ -1,5 +1,10 @@
 [
-    { "caption": "CiteBibTeX: Extract citations in current file",
-      "command": "extract_citations"
+    {
+        "caption": "CiteBibTeX: Extract citations in current file",
+        "command": "extract_citations"
+    },
+    {
+        "caption": "CiteBibTeX: Show Reference Selector",
+        "command": "cite_bibtex_show_reference_selector"
     }
 ]
