@@ -144,6 +144,9 @@ class CiteBibtex(object):
                 except KeyError:
                     pass
 
+        # Replace line breaks with space and replace consecutive spaces with one.
+        title = ' '.join(title.replace('\n', ' ').split())
+        publication = ' '.join(publication.replace('\n', ' ').split())
         return [search_key, year + ' | ' + authors, title, publication]
 
     def update_refs(self, ref_file):
