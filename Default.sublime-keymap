@@ -1,4 +1,15 @@
 [
-    { "keys": ["f10"], "command": "cite_bibtex_show_reference_selector" },
-    { "keys": ["f9"], "command": "cite_bibtex_show_citation_selector" }
+    {
+        "keys": [
+            "ctrl+k",
+            "ctrl+c"
+        ],
+        "command": "cite_bibtex_show_reference_selector"
+    },
+    {
+        "keys": [
+            "f9"
+        ],
+        "command": "cite_bibtex_show_citation_selector"
+    }
 ]
