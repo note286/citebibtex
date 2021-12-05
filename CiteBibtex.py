@@ -97,9 +97,9 @@ class CiteBibtex(object):
         # Authors
         try:
             authors = i['author']
-            # authors is a list of 'last, first' strings, we only want
-            # the last names here
-            authors = ', '.join([a.split(',',)[0] for a in authors])
+            # authors is a list of 'last, first' strings, we want
+            # 'first last' names here
+            authors = ', '.join([a.split(',')[1] + ' ' + a.split(',')[0] for a in authors])
         except KeyError:
             authors = '<no authors>'
 
